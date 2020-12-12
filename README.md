@@ -84,7 +84,7 @@ sudo update-rc.d ssh enable
 
 Inside the ___assembly___ directory there are 2 programs written in assembly:
 
-* prodottoMain.s: Simple program that calculates the product of 2 integers. The input numbers are readed using the clib functions printf and scanf. The function that actually calculates the product is stored in a different source file (prodottoFunc.s)
+* prodottoMain.s: Simple program that calculates the product of 2 integers. The input numbers are read using the clib functions printf and scanf. The function that actually calculates the product is stored in a different source file (prodottoFunc.s)
 * ledon.s: Simple program that uses some GPIO pins to control 3 leds pressing a button. This code will only run on a real raspberry hardware since the GPIO pins are not emulated the kernels used here
 
 ### Assembling and running prodottoMain
