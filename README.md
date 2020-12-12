@@ -95,19 +95,19 @@ In order to assemble prodottoMain in the raspberry Pi OS we can use gcc:
 gcc -g -o prodotto prodottoFunc.s prodottoMain.s
 ```
 
-After running gcc the executable is saved in the file prodotto. to run prodotto we can simply run the following command:
+After running gcc the executable is saved in the file prodotto. To run pthe program we can simply execute the following command:
 
 ```bash
 ./prodotto
 ```
 
-If you want to run it in debug mode we can use gdb:
+If we want to run it in debug mode we can use gdb:
 
 ```bash
 gdb ./prodotto
 ```
 
-Please refer to this [tutorial](https://azeria-labs.com/debugging-with-gdb-introduction/) to learn how to use the basic function of the debugger gdb
+Please refer to this [tutorial](https://azeria-labs.com/debugging-with-gdb-introduction/) to learn how to use the basic function of gdb debugger
 
 ## Useful links
 
