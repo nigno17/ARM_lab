@@ -115,7 +115,7 @@ In order to run this code you need a raspberry Pi 2/3 board. The program is expe
 
 ![Schematic needed for ledon.s code](diagrams/schema_esempio_lezione.png)
 
-The led connected to GPIO26 will turn on everytime the button is pressed, the led on GPIO5 will switch its state in the button transitions not-pressed/pressed, and the led on GPIO6 will switch its state in the button transitions pressed/not-pressed.
+The led connected to GPIO26 will turn on everytime the button is pressed, the led on GPIO5 will switch its state whenever the button transits from not-pressed to pressed, and the led on GPIO6 will switch its state whenever the button transits from pressed/not-pressed.
 
 In order to assemble ledon.s in the raspberry Pi OS use gcc:
 
