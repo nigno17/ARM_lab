@@ -95,7 +95,7 @@ In order to assemble prodottoMain in the raspberry Pi OS we can use gcc:
 gcc -g -o prodotto prodottoFunc.s prodottoMain.s
 ```
 
-After running gcc the executable is saved in the file prodotto. To run pthe program we can simply execute the following command:
+After running gcc the executable is saved in the file prodotto. To run the program we can simply execute the following command:
 
 ```bash
 ./prodotto
@@ -108,6 +108,32 @@ gdb ./prodotto
 ```
 
 Please refer to this [tutorial](https://azeria-labs.com/debugging-with-gdb-introduction/) to learn how to use the basic function of gdb debugger
+
+### Assembling and running ledon
+
+In order to run this code you need a raspberry Pi 2/3 board. The program is expecting to have 3 leds connected to the pins GPIO 5, 6 and 26, and a button connected to the pin GPIO 22. The following schematic shows a possible way to connect the components to the board.
+
+![Schematic needed for ledon.s code](diagrams/schema_esempio_lezione.png)
+
+The led connected to GPIO26 will turn on everytime the button is pressed, the led on GPIO5 will switch its state in the button transitions not-pressed/pressed, and the led on GPIO6 will switch its state in the button transitions pressed/not-pressed.
+
+In order to assemble ledon.s in the raspberry Pi OS use gcc:
+
+```bash
+gcc -g -o ledon ledon.s
+```
+
+To run the program execute the following command:
+
+```bash
+./ledon
+```
+
+If we want to run it in debug mode use this command:
+
+```bash
+gdb ./ledon
+```
 
 ## Useful links
 
