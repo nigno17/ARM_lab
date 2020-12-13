@@ -68,7 +68,7 @@ You can now connect to the Raspberry Pi OS from your host system:
 ssh pi@127.0.0.1 -p 5022 -X
 ```
 
-And send file to the Raspberry Pi OS using scp:
+And send files to the Raspberry Pi OS using scp:
 
 ```bash
 scp -P 5022 -r PATH_OF_THE_FOLDER_IN_THE_HOST_SYSTEM pi@127.0.0.1:PATH_OF_THE_DESTINATION_FOLDER_IN_RASPBERRY_PI_OS
@@ -107,7 +107,7 @@ If we want to run it in debug mode we can use gdb:
 gdb ./prodotto
 ```
 
-Please refer to this [tutorial](https://azeria-labs.com/debugging-with-gdb-introduction/) to learn how to use the basic function of gdb debugger
+Please refer to this [tutorial](https://azeria-labs.com/debugging-with-gdb-introduction/) to learn how to use the basic functions of gdb debugger
 
 ### Assembling and running ledon
 
